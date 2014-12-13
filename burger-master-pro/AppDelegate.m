@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MenuViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    MenuViewController *menuViewController = [[[MenuViewController alloc] init] autorelease];
+    //UINavigationController *navController = [[[UINavigationController alloc] initWithRootViewController:menuViewController] autorelease];
+    //self.window.rootViewController = navController;
+    self.window.rootViewController = menuViewController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0A3BEE391A3A4985000BEC48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BEE381A3A4985000BEC48 /* main.m */; };
 		0A3BEE3C1A3A4985000BEC48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BEE3B1A3A4985000BEC48 /* AppDelegate.m */; };
-		0A3BEE3F1A3A4985000BEC48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BEE3E1A3A4985000BEC48 /* ViewController.m */; };
-		0A3BEE421A3A4985000BEC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3BEE401A3A4985000BEC48 /* Main.storyboard */; };
 		0A3BEE441A3A4985000BEC48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3BEE431A3A4985000BEC48 /* Images.xcassets */; };
 		0A3BEE471A3A4985000BEC48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3BEE451A3A4985000BEC48 /* LaunchScreen.xib */; };
 		0A3BEE531A3A4985000BEC48 /* burger_master_proTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BEE521A3A4985000BEC48 /* burger_master_proTests.m */; };
+		0A3BEE611A3A4B22000BEC48 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BEE601A3A4B22000BEC48 /* MainViewController.m */; };
+		0A3BEE641A3A4B2C000BEC48 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3BEE631A3A4B2C000BEC48 /* MenuViewController.m */; };
+		0A3BEE6A1A3C2566000BEC48 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3BEE691A3C2566000BEC48 /* burger.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		0A3BEE381A3A4985000BEC48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A3BEE3A1A3A4985000BEC48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A3BEE3B1A3A4985000BEC48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A3BEE3D1A3A4985000BEC48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A3BEE3E1A3A4985000BEC48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0A3BEE411A3A4985000BEC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A3BEE431A3A4985000BEC48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A3BEE461A3A4985000BEC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0A3BEE4C1A3A4985000BEC48 /* burger-master-proTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "burger-master-proTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3BEE511A3A4985000BEC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3BEE521A3A4985000BEC48 /* burger_master_proTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = burger_master_proTests.m; sourceTree = "<group>"; };
+		0A3BEE5F1A3A4B22000BEC48 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0A3BEE601A3A4B22000BEC48 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0A3BEE621A3A4B2C000BEC48 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		0A3BEE631A3A4B2C000BEC48 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		0A3BEE691A3C2566000BEC48 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +84,12 @@
 		0A3BEE351A3A4985000BEC48 /* burger-master-pro */ = {
 			isa = PBXGroup;
 			children = (
-				0A3BEE5C1A3A499D000BEC48 /* New Group */,
+				0A3BEE5C1A3A499D000BEC48 /* Models */,
+				0A3BEE5D1A3A4AFD000BEC48 /* Views */,
+				0A3BEE5E1A3A4B02000BEC48 /* Controllers */,
 				0A3BEE3A1A3A4985000BEC48 /* AppDelegate.h */,
 				0A3BEE3B1A3A4985000BEC48 /* AppDelegate.m */,
-				0A3BEE3D1A3A4985000BEC48 /* ViewController.h */,
-				0A3BEE3E1A3A4985000BEC48 /* ViewController.m */,
-				0A3BEE401A3A4985000BEC48 /* Main.storyboard */,
 				0A3BEE431A3A4985000BEC48 /* Images.xcassets */,
-				0A3BEE451A3A4985000BEC48 /* LaunchScreen.xib */,
 				0A3BEE361A3A4985000BEC48 /* Supporting Files */,
 			);
 			path = "burger-master-pro";
@@ -97,6 +98,7 @@
 		0A3BEE361A3A4985000BEC48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A3BEE691A3C2566000BEC48 /* burger.png */,
 				0A3BEE371A3A4985000BEC48 /* Info.plist */,
 				0A3BEE381A3A4985000BEC48 /* main.m */,
 			);
@@ -120,11 +122,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A3BEE5C1A3A499D000BEC48 /* New Group */ = {
+		0A3BEE5C1A3A499D000BEC48 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "New Group";
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0A3BEE5D1A3A4AFD000BEC48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A3BEE451A3A4985000BEC48 /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A3BEE5E1A3A4B02000BEC48 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A3BEE621A3A4B2C000BEC48 /* MenuViewController.h */,
+				0A3BEE631A3A4B2C000BEC48 /* MenuViewController.m */,
+				0A3BEE5F1A3A4B22000BEC48 /* MainViewController.h */,
+				0A3BEE601A3A4B22000BEC48 /* MainViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3BEE421A3A4985000BEC48 /* Main.storyboard in Resources */,
 				0A3BEE471A3A4985000BEC48 /* LaunchScreen.xib in Resources */,
 				0A3BEE441A3A4985000BEC48 /* Images.xcassets in Resources */,
+				0A3BEE6A1A3C2566000BEC48 /* burger.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,9 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3BEE3F1A3A4985000BEC48 /* ViewController.m in Sources */,
 				0A3BEE3C1A3A4985000BEC48 /* AppDelegate.m in Sources */,
 				0A3BEE391A3A4985000BEC48 /* main.m in Sources */,
+				0A3BEE611A3A4B22000BEC48 /* MainViewController.m in Sources */,
+				0A3BEE641A3A4B2C000BEC48 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,14 +274,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A3BEE401A3A4985000BEC48 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A3BEE411A3A4985000BEC48 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A3BEE451A3A4985000BEC48 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
