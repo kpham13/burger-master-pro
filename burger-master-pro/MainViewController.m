@@ -20,8 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.burgerImage = [UIImage imageNamed:@"burger"];
+
     [self createBurgerButton];
 }
 
@@ -37,6 +36,7 @@
 }
 
 - (void)createBurgerButton {
+    self.burgerImage = [UIImage imageNamed:@"burger"];
     _burgerButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [_burgerButton addTarget:self action:@selector(didPressBurgerButton) forControlEvents:UIControlEventTouchUpInside];
     [_burgerButton setImage:self.burgerImage forState:UIControlStateNormal];
